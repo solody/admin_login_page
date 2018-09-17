@@ -1,0 +1,9 @@
+admin_login_page.login:
+  path: '/admin/login'
+  defaults:
+    _form: '\Drupal\user\Form\UserLoginForm'
+    _title: '登录'
+  requirements:
+    _user_is_logged_in: 'FALSE'
+  options:
+    _maintenance_access: TRUE
